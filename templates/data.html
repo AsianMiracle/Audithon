@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инновационное развитие регионов России от ASTRA</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="static/styles/style.css">
+
+    <script>
+        var regionsData =  '{{ regionsData|safe }}';
+        var obj = JSON.parse(regionsData);
+        regionsData = obj;    </script>
+</head>
+
+<body>
+    <div class="container-fluid background">
+        <div class="row">
+            <div class="col-1">
+
+            </div>
+            <div class="col-10">
+                <div class="row header align-items-center justify-content-center">
+                    <div class="col-auto">
+                        <div class="title">Инновационное развитие регионов России</div>
+                    </div>
+                </div>
+                <div class="row content">
+                    <div class="col">
+                        <div class="row align-items-start">
+                            <div class="col-auto hidennn">
+                                <div class="row justify-content-center">
+                                    <div class="col-auto">
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-auto">
+                                        <h1 class="my-h1 align-middle">Субъекты РФ</h1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <div class="left-menu">
+                                            <ul class="list-group">
+                                                <li>
+                                                    <a href="#MOW" data-id="77" class="map-tab-link stop-this-link"
+                                                        data-color="#ffd17f">
+                                                        Москва
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#SPB" data-id="78" class="map-tab-link stop-this-link"
+                                                        data-color="#9ed765">
+                                                        Санкт-Петербург
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#SEV" data-id="79" class="map-tab-link stop-this-link"
+                                                        data-color="#00d990">
+                                                        Севастополь
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#ADY" data-id="1" class="map-tab-link stop-this-link"
+                                                        data-color="#ed9988">
+                                                        Республика Адыгея
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#ALI" data-id="2" class="map-tab-link stop-this-link"
+                                                        data-color="#ffd17f">
+                                                        Республика Алтай
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#BAS" data-id="3" class="map-tab-link stop-this-link"
+                                                        data-color="#9ed765">
+                                                        Республика Башкортостан
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#BUR" data-id="4" class="map-tab-link stop-this-link"
+                                                        data-color="#00d990">
+                                                        Республика Бурятия
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#DAG" data-id="5" class="map-tab-link stop-this-link"
+                                                        data-color="#4d94db">
+                                                        Республика Дагестан
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#ING" data-id="6" class="map-tab-link stop-this-link"
+                                                        data-color="#5d77c7">
+                                                        Республика Ингушетия
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KAB" data-id="7" class="map-tab-link stop-this-link"
+                                                        data-color="#6250b9">
+                                                        Кабардино-Балкарская Республика
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KAI" data-id="8" class="map-tab-link stop-this-link"
+                                                        data-color="#522e9a">
+                                                        Республика Калмыкия
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KAO" data-id="9" class="map-tab-link stop-this-link"
+                                                        data-color="#ed9988">
+                                                        Карачаево-Черкесская Республика
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KAR" data-id="10" class="map-tab-link stop-this-link"
+                                                        data-color="#ffd17f">
+                                                        Республика Карелия
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KOM" data-id="11" class="map-tab-link stop-this-link"
+                                                        data-color="#9ed765">
+                                                        Республика Коми
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KRM" data-id="12" class="map-tab-link stop-this-link"
+                                                        data-color="#00d990">
+                                                        Республика Крым
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#MAR" data-id="13" class="map-tab-link stop-this-link"
+                                                        data-color="#4d94db">
+                                                        Республика Марий Эл
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#MOR" data-id="14" class="map-tab-link stop-this-link"
+                                                        data-color="#5d77c7">
+                                                        Республика Мордовия
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#SAH" data-id="15" class="map-tab-link stop-this-link"
+                                                        data-color="#6250b9">
+                                                        Республика Саха (Якутия)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#NOR" data-id="16" class="map-tab-link stop-this-link"
+                                                        data-color="#522e9a">
+                                                        Республика Северная Осетия — Алания
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#TAT" data-id="17" class="map-tab-link stop-this-link"
+                                                        data-color="#ed9988">
+                                                        Республика Татарстан
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#TUV" data-id="18" class="map-tab-link stop-this-link"
+                                                        data-color="#ffd17f">
+                                                        Республика Тыва
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#UDM" data-id="19" class="map-tab-link stop-this-link"
+                                                        data-color="#9ed765">
+                                                        Удмуртская Республика
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KHK" data-id="20" class="map-tab-link stop-this-link"
+                                                        data-color="#00d990">
+                                                        Республика Хакасия
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#CHA" data-id="21" class="map-tab-link stop-this-link"
+                                                        data-color="#4d94db">
+                                                        Чеченская Республика
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#CHV" data-id="22" class="map-tab-link stop-this-link"
+                                                        data-color="#5d77c7">
+                                                        Чувашская Республика
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#ALT" data-id="23" class="map-tab-link stop-this-link"
+                                                        data-color="#6250b9">
+                                                        Алтайский край
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#ZAB" data-id="24" class="map-tab-link stop-this-link"
+                                                        data-color="#522e9a">
+                                                        Забайкальский край
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KAM" data-id="25" class="map-tab-link stop-this-link"
+                                                        data-color="#ed9988">
+                                                        Камчатский край
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KRA" data-id="26" class="map-tab-link stop-this-link"
+                                                        data-color="#ffd17f">
+                                                        Краснодарский край
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KYA" data-id="27" class="map-tab-link stop-this-link"
+                                                        data-color="#9ed765">
+                                                        Красноярский край
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#PER" data-id="28" class="map-tab-link stop-this-link"
+                                                        data-color="#00d990">
+                                                        Пермский край
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#PRI" data-id="29" class="map-tab-link stop-this-link"
+                                                        data-color="#4d94db">
+                                                        Приморский край
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#STA" data-id="30" class="map-tab-link stop-this-link"
+                                                        data-color="#5d77c7">
+                                                        Ставропольский край
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KHA" data-id="31" class="map-tab-link stop-this-link"
+                                                        data-color="#6250b9">
+                                                        Хабаровский край
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#AMU" data-id="32" class="map-tab-link stop-this-link"
+                                                        data-color="#522e9a">
+                                                        Амурская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#ARK" data-id="33" class="map-tab-link stop-this-link"
+                                                        data-color="#ed9988">
+                                                        Архангельская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#AST" data-id="34" class="map-tab-link stop-this-link"
+                                                        data-color="#ffd17f">
+                                                        Астраханская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#BEL" data-id="35" class="map-tab-link stop-this-link"
+                                                        data-color="#9ed765">
+                                                        Белгородская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#BRY" data-id="36" class="map-tab-link stop-this-link"
+                                                        data-color="#00d990">
+                                                        Брянская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#VLA" data-id="37" class="map-tab-link stop-this-link"
+                                                        data-color="#4d94db">
+                                                        Владимирская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#VGG" data-id="38" class="map-tab-link stop-this-link"
+                                                        data-color="#5d77c7">
+                                                        Волгоградская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#VLG" data-id="39" class="map-tab-link stop-this-link"
+                                                        data-color="#6250b9">
+                                                        Вологодская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#VOR" data-id="40" class="map-tab-link stop-this-link"
+                                                        data-color="#522e9a">
+                                                        Воронежская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#IVA" data-id="41" class="map-tab-link stop-this-link"
+                                                        data-color="#ed9988">
+                                                        Ивановская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#IRK" data-id="42" class="map-tab-link stop-this-link"
+                                                        data-color="#ffd17f">
+                                                        Иркутская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KAG" data-id="43" class="map-tab-link stop-this-link"
+                                                        data-color="#9ed765">
+                                                        Калининградская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KAL" data-id="44" class="map-tab-link stop-this-link"
+                                                        data-color="#00d990">
+                                                        Калужская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KEM" data-id="45" class="map-tab-link stop-this-link"
+                                                        data-color="#4d94db">
+                                                        Кемеровская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KIR" data-id="46" class="map-tab-link stop-this-link"
+                                                        data-color="#5d77c7">
+                                                        Кировская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KOS" data-id="47" class="map-tab-link stop-this-link"
+                                                        data-color="#6250b9">
+                                                        Костромская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KUG" data-id="48" class="map-tab-link stop-this-link"
+                                                        data-color="#522e9a">
+                                                        Курганская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KUR" data-id="49" class="map-tab-link stop-this-link"
+                                                        data-color="#ed9988">
+                                                        Курская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#LEN" data-id="50" class="map-tab-link stop-this-link"
+                                                        data-color="#ffd17f">
+                                                        Ленинградская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#LIP" data-id="51" class="map-tab-link stop-this-link"
+                                                        data-color="#9ed765">
+                                                        Липецкая область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#MAG" data-id="52" class="map-tab-link stop-this-link"
+                                                        data-color="#00d990">
+                                                        Магаданская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#MOS" data-id="53" class="map-tab-link stop-this-link"
+                                                        data-color="#4d94db">
+                                                        Московская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#MUR" data-id="54" class="map-tab-link stop-this-link"
+                                                        data-color="#5d77c7">
+                                                        Мурманская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#NIZ" data-id="55" class="map-tab-link stop-this-link"
+                                                        data-color="#6250b9">
+                                                        Нижегородская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#NGR" data-id="56" class="map-tab-link stop-this-link"
+                                                        data-color="#522e9a">
+                                                        Новгородская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#NVS" data-id="57" class="map-tab-link stop-this-link"
+                                                        data-color="#ed9988">
+                                                        Новосибирская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#OMS" data-id="58" class="map-tab-link stop-this-link"
+                                                        data-color="#ffd17f">
+                                                        Омская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#ORE" data-id="59" class="map-tab-link stop-this-link"
+                                                        data-color="#9ed765">
+                                                        Оренбургская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#ORL" data-id="60" class="map-tab-link stop-this-link"
+                                                        data-color="#00d990">
+                                                        Орловская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#PNZ" data-id="61" class="map-tab-link stop-this-link"
+                                                        data-color="#4d94db">
+                                                        Пензенская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#PSK" data-id="62" class="map-tab-link stop-this-link"
+                                                        data-color="#5d77c7">
+                                                        Псковская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#ROS" data-id="63" class="map-tab-link stop-this-link"
+                                                        data-color="#6250b9">
+                                                        Ростовская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#RYA" data-id="64" class="map-tab-link stop-this-link"
+                                                        data-color="#522e9a">
+                                                        Рязанская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#SAR" data-id="65" class="map-tab-link stop-this-link"
+                                                        data-color="#5d77c7">
+                                                        Самарская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#SAK" data-id="66" class="map-tab-link stop-this-link"
+                                                        data-color="#6250b9">
+                                                        Сахалинская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#SVE" data-id="67" class="map-tab-link stop-this-link"
+                                                        data-color="#522e9a">
+                                                        Свердловская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#SMO" data-id="68" class="map-tab-link stop-this-link"
+                                                        data-color="#ed9988">
+                                                        Смоленская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#TAM" data-id="69" class="map-tab-link stop-this-link"
+                                                        data-color="#ffd17f">
+                                                        Тамбовская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#TVE" data-id="70" class="map-tab-link stop-this-link"
+                                                        data-color="#9ed765">
+                                                        Тверская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#TOM" data-id="71" class="map-tab-link stop-this-link"
+                                                        data-color="#00d990">
+                                                        Томская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#TUL" data-id="72" class="map-tab-link stop-this-link"
+                                                        data-color="#4d94db">
+                                                        Тульская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#TYU" data-id="73" class="map-tab-link stop-this-link"
+                                                        data-color="#5d77c7">
+                                                        Тюменская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#ULY" data-id="74" class="map-tab-link stop-this-link"
+                                                        data-color="#6250b9">
+                                                        Ульяновская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#CHE" data-id="75" class="map-tab-link stop-this-link"
+                                                        data-color="#522e9a">
+                                                        Челябинская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#YAR" data-id="76" class="map-tab-link stop-this-link"
+                                                        data-color="#ed9988">
+                                                        Ярославская область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#JEW" data-id="80" class="map-tab-link stop-this-link"
+                                                        data-color="#00d990">
+                                                        Еврейская автономная область
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#NEN" data-id="81" class="map-tab-link stop-this-link"
+                                                        data-color="#4d94db">
+                                                        Ненецкий автономный округ
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#KHM" data-id="82" class="map-tab-link stop-this-link"
+                                                        data-color="#5d77c7">
+                                                        Ханты-Мансийский автономный округ - Югра
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#CHU" data-id="83" class="map-tab-link stop-this-link"
+                                                        data-color="#6250b9">
+                                                        Чукотский автономный округ
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#YAN" data-id="84" class="map-tab-link stop-this-link"
+                                                        data-color="#ed9988">
+                                                        Ямало-Ненецкий автономный округ
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-center">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <form action="/">
+                                                    <button href="index.html" class="btn btn-success">Статистика</button>
+                                                </form>
+                                            </div>
+                                            <div class="col-10">
+                                                <form class="row" method="get" action="">
+                                                    <div class="form-group col-10">
+                                                        <select class="custom-select" required name="data"
+                                                            id="dataSelector">
+                                                            <option id="data1" value="1">Уровень инновационной активности организаций (проценты)</option>
+                                                            <option id="data2" value="2">Удельный вес организаций, осуществлявших технологические инновации (проценты)</option>
+                                                            <option id="data3" value="3">Объем инновационных товаров, работ, услуг (млн рублей)</option>
+                                                            <option id="data4" value="4">Удельный вес инновационных товаров, работ, услуг в общем объеме (проценты)</option>
+                                                            <option id="data5" value="5">Затраты на технологические инновации организаций (млн рублей)</option>
+                                                            <option id="data6" value="6">Затраты на инновационную деятельность организаций (млн рублей)</option>
+                                                            <option id="data7" value="7">Удельный вес затрат на инновационную деятельность в общем объеме отгруженных товаров</option>
+                                                            <option id="data8" value="8">Разработанные передовые производственные технологии (единицы)</option>
+                                                            <option id="data9" value="9">Используемые передовые производственные технологии (единицы)</option>
+                                                            <option id="data10" value="10">Сведения об использовании объектов интеллектуальной собственности (единицы)</option>
+                                                            <option id="data11" value="11">Численность персонала, занятого научными исследованиями и разработками (чел)</option>
+                                                            <option id="data12" value="12">Численность исследователей, имеющих ученую степень, по субъектам Российской Федерации (чел)</option>
+                                                            <option id="data13" value="13">Внутренние затраты на научные исследования и разработки (млн рублей)</option>
+                                                            <option id="data14" value="14">Выдача охранных документов по патентам (единицы)</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Example invalid custom select feedback
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 align-middle">
+                                                        <button type="submit"
+                                                            class="btn btn-primary mb-2">Подтвердить</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <h1 class="my-h1 align-middle">Развитие регионов</h1>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col">
+                                                <div class="table-area">
+                                                    <table class="table" id="regionsTable">
+                                                        <thead class="thead-dark">
+                                                            <tr>
+                                                                <th scope="col">Регион</th>
+                                                                <th scope="col">2015 <button class="btn-sort"
+                                                                        onclick="sortTable(0)">+</button></th>
+                                                                <th scope="col">2016 <button class="btn-sort"
+                                                                        onclick="sortTable(1)">+</button></th>
+                                                                <th scope="col">2017 <button class="btn-sort"
+                                                                        onclick="sortTable(2)">+</button></th>
+                                                                <th scope="col">2018 <button class="btn-sort"
+                                                                        onclick="sortTable(3)">+</button></th>
+                                                                <th scope="col">2019 <button class="btn-sort"
+                                                                        onclick="sortTable(4)">+</button></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="rtBody">
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-auto">
+                                                <button class="btn-lg btn-success" onclick="generateCSV()">Выгрузить CSV
+                                                    таблицу</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script>
+        const $leftLinks = document.querySelectorAll('.left-menu a');
+
+        var params = window
+            .location
+            .search
+            .replace('?', '')
+            .split('&')
+            .reduce(
+                function (p, e) {
+                    var a = e.split('=');
+                    p[decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+                    return p;
+                },
+                {}
+            );
+
+        var data = params['data'];
+        if(data == null)
+                data = "1";
+        $('#data' + data).prop('selected', true);
+
+        $leftLinks.forEach(el => {
+            let code = el.getAttribute('href').toString().substr(1);
+            let currentElement = document.querySelector(`.left-menu a[href="${el.getAttribute('href')}"]`);
+            let name = currentElement.innerHTML;
+            var strTable = "<tr>";
+            var strTable = strTable + "<th scope='row'>" + name + "</th>";
+            for (i = 2015; i <= 2019; i++) {
+                var value = regionsData[code][i];
+                var strTable = strTable + "<td>" + value + "</td>";
+            }
+            var srtTable = strTable + "</tr>";
+            $('#rtBody').append(strTable);
+        });
+    </script>
+
+    <script>
+        function generateCSV() {
+            var csv = 'Code;2015;2016;2017;2018;2019\n';
+            $leftLinks.forEach(el => {
+                let code = el.getAttribute('href').toString().substr(1);
+                csv += code;
+                for (i = 2015; i <= 2019; i++) {
+                    csv += ";";
+                    csv += regionsData[code][i];
+                }
+                csv += "\n";
+            });
+
+            var hiddenElement = document.createElement('a');
+            hiddenElement.href = 'data:text/csv;charset=windows-1252,' + encodeURI(csv);
+            hiddenElement.target = '_blank';
+            hiddenElement.download = 'data.csv';
+            hiddenElement.click();
+        }
+    </script>
+
+    <script>
+        var oldL = -1;
+        var b = -1;
+        function sortTable(l) {
+            if (oldL == l) b *= -1;
+            else b = -1;
+            oldL = l;
+            var table, rows, switching, i, x, y, shouldSwitch;
+            table = document.getElementById("regionsTable");
+            switching = true;
+            while (switching) {
+                switching = false;
+                rows = table.getElementsByTagName("TR");
+                var start, end, delta;
+                start = 1;
+                end = rows.length - 1;
+                delta = 1;
+                for (i = start; i < end; i += delta) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("TD")[l];
+                    y = rows[i + delta].getElementsByTagName("TD")[l];
+                    if (Number(x.innerHTML) * b > Number(y.innerHTML) * b) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + delta], rows[i]);
+                    switching = true;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
